@@ -1,4 +1,5 @@
 require_relative 'spec_helper'
+require 'pry'
 
 describe Show do
   let(:show) {Show.new}
@@ -37,6 +38,7 @@ describe Show do
   end
 
   it "should have a genre" do
+    #binding.pry
     #TODO: you'll need to add yet another new field to shows here
     show.name = "Gilmore Girls"
     show.genre = "Dramedy"
